@@ -45,6 +45,11 @@ RUN bash /joycv_install/install_basler_driver_pypylon.sh
 ADD ./mmclassification_install/install_mmclassification.sh /mmclassification_install/install_mmclassification.sh
 RUN bash /mmclassification_install/install_mmclassification.sh
 RUN apt-get install -y python-is-python3
+
+##-----------MM Detection -----
+ADD ./mmdetection_install/install_mmdetection.sh /mmdetection_install/install_mmdetection.sh
+RUN bash /mmdetection_install/install_mmdetection.sh
+
 # # Copy AITemplate to Docker
 # RUN mkdir /AITemplate
 # ADD ./COMMIT_INFO /AITemplate/COMMIT_INFO
