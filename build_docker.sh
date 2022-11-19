@@ -1,1 +1,1 @@
-docker build . -t  registry.cn-beijing.aliyuncs.com/joysort/training:latest
+sudo docker build . -t  registry.cn-beijing.aliyuncs.com/joysort/training:latest

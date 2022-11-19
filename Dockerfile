@@ -49,6 +49,9 @@ RUN apt-get install -y python-is-python3
 ##-----------MM Detection -----
 ADD ./mmdetection_install/install_mmdetection.sh /mmdetection_install/install_mmdetection.sh
 RUN bash /mmdetection_install/install_mmdetection.sh
+RUN pip install clearml
+RUN pwd
+ADD ./clearml/clearml.conf ～/clearml.conf
 
 # # Copy AITemplate to Docker
 # RUN mkdir /AITemplate
